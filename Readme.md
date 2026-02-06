@@ -2,7 +2,7 @@
 
 A modern, full-stack social media application that allows users to share posts with text and images, interact via likes and comments, and view community trends through dynamic sorting.
 
-### 🌐 [Live Demo Link](https://your-render-app-link.com) | 💻 [GitHub Repository](https://github.com/your-username/your-repo-name)
+### 🌐 [Live Demo Link](https://social-media-vd4y.onrender.com/) 
 
 ---
 
