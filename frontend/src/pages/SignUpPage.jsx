@@ -2,6 +2,7 @@ import { useState } from 'react'
 import {useForm} from "react-hook-form"
 import { useAuthStore } from '../store/useAuthStore';
 import toast from 'react-hot-toast';
+import { NavLink } from 'react-router-dom';
 
 const SignUpPage = () => {
     const {isSigninUp, signup} = useAuthStore();
@@ -79,7 +80,7 @@ const SignUpPage = () => {
             </form>
 
             <div style={styles.link}>
-                Have an account? <span  style={{color: '#0095f6', cursor: 'pointer'}}>Log in</span>
+                Have an account? <NavLink  style={{color: '#0095f6', cursor: 'pointer'}}>Log in</NavLink>
             </div>
         </div>
     );

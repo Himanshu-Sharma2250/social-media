@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import {useForm} from "react-hook-form"
 import { useAuthStore } from '../store/useAuthStore';
+import { NavLink } from 'react-router-dom';
 
 const SignInPage = () => {
     const [formData, setFormData] = useState({ email: '', password: '' });
@@ -68,7 +69,7 @@ const SignInPage = () => {
             </form>
 
             <div style={styles.link}>
-                Don't have an account? <span style={{color: '#0095f6', cursor: 'pointer'}}>Sign up</span>
+                Don't have an account? <NavLink style={{color: '#0095f6', cursor: 'pointer'}}>Sign up</NavLink>
             </div>
         </div>
     );
