@@ -29,11 +29,11 @@ function App() {
       <>
         <Toaster />
         <Routes>
-          <Route path="/login" element={!authUser ? <SignInPage /> : <Navigate to={"/feed"}/>} />
+          <Route path="/login" element={!authUser ? <SignInPage /> : <Navigate to={"/"}/>} />
 
-          <Route path="/signup" element={!authUser ? <SignUpPage /> : <Navigate to={"/feed"}/>} />
+          <Route path="/signup" element={!authUser ? <SignUpPage /> : <Navigate to={"/"}/>} />
 
-          <Route path="/feed" element={authUser ? <FeedPage currentUser={authUser} /> : <Navigate to={"/login"}/>} />
+          <Route path="/" element={authUser ? <FeedPage currentUser={authUser} /> : <Navigate to={"/login"}/>} />
         </Routes>
       </>
     )
